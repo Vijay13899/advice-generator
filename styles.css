@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 30rem;
+  max-width: 100%;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-top: 10rem;
+  margin-inline: auto;
+  border-radius: 1rem;
+  background-color: hsl(217, 19%, 24%);
+}
+
+@media screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .whole {
+    width: auto;
+    margin-inline: 50px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+.upper {
+  color: hsl(150, 100%, 66%);
+  font-size: small;
+  letter-spacing: 3px;
+}
+
+#advice {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+}
+
+.dice {
+  cursor: pointer;
+  background-color: hsl(150, 100%, 66%);
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 50%;
+  transform: translateY(45px);
+}
+
+.dice:hover {
+  box-shadow: 2px 0px 30px hsl(150, 100%, 66%);
+}
+
+.dice img {
+  margin-top: 3px;
+}
+#diceImg {
+  transition: transform 0.3s ease-in-out;
+}
+#diceImg.rotate {
+  transform: rotate(360deg);
+}
